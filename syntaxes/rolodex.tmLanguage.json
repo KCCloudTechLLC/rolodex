@@ -1,0 +1,57 @@
+{
+  "name": "rolodex",
+  "scopeName": "source.rolodex",
+  "fileTypes": [
+    ".rolodex"
+  ],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "name": "keyword.control.rolodex",
+      "match": "\\b(Hello|person)\\b"
+    },
+    {
+      "name": "string.quoted.double.rolodex",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "string.quoted.single.rolodex",
+      "begin": "'",
+      "end": "'"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.rolodex",
+          "begin": "/\\*",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.rolodex"
+            }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.rolodex"
+            }
+          }
+        },
+        {
+          "begin": "//",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.whitespace.comment.leading.rolodex"
+            }
+          },
+          "end": "(?=$)",
+          "name": "comment.line.rolodex"
+        }
+      ]
+    }
+  }
+}

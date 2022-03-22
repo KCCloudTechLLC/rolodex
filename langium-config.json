@@ -1,0 +1,12 @@
+{
+    "projectName": "Rolodex",
+    "languages": [{
+        "id": "rolodex",
+        "grammar": "src/language-server/rolodex.langium",
+        "fileExtensions": [".rolodex"],
+        "textMate": {
+            "out": "syntaxes/rolodex.tmLanguage.json"
+        }
+    }],
+    "out": "src/language-server/generated"
+}
